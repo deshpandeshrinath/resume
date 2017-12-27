@@ -1,0 +1,159 @@
+%-------------------------
+% Resume in Latex
+% Author : Shrinath Deshpande
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://github.io/deshpandeshrinath/}{\Large Shrinath Deshpande}} & Email : \href{mailto:deshpandeshrinath@gmail.com}{deshpandeshrinath@gmail.com}\\
+  \href{http://github.io.deshpandeshrinath/}{http://github.io.deshpandeshrinath/} & Mobile : +1-631-633-1851 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stony Brook University}{Stony Brook, NY}
+      {Ph.D. (Major: Mechanical, Minor: Computer Science)}{Aug. 2015 -- Present}
+    \resumeItemListStart
+      \resumeItem{Relevent Coursework}
+      {Computer Vision, Machine Learning, Analysis of Algorithms, Computational Geometry, Advanced Control Systems, Robotics, Geometric Modelling for CAD, Product Design Optimization}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stony Brook University}{Stony Brook, NY}
+      {Research Assistant}{May 2016 -- Present}
+      \resumeItemListStart
+        \resumeItem{Machine Learning}
+          {Research on machine learning techniques for kinematic synthesis of planar mechanisms.
+          Performed dimensionality reduction using Auto-Encoders.
+          Developed a data driven approach to mechanism synthesis.}
+        \resumeItem{Optimization}
+          {Developed a optimization routine for linkage synthesis. Led to award winning publication for solving practical synthesis problems (doi: 10.1115/1.4037801)}
+        \resumeItem{MotionGen: Website, iOs and Android App for Linkage Synthesis}
+          {Developed core modules of a cross platform App for planar mechanism synthesis and simulation. Written in Javascript, HTML, CSS and built with Apache Cordova framework.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Stony Brook University}{Stony Brook, NY}
+      {Teaching Assistant}{Aug 2015 -- May 2016}
+      \resumeItemListStart
+        \resumeItem{Teaching Assistant - Design Innovation, Engineering Dynamics}
+          {The undergraduate courses at Stony Brook University, had more than 200 students per course enrolled.
+          Involved in creating assignment, exams and conducting recitation sessions.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Relevant Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubItem{Visual Odometry (Oct 2017 -- Dec 2017)}
+      {Monocular Visual Odometry using Deep Learning. Implemented the paper "DeepVO: Towards end-to-end visual odometry with deep Recurrent Convolutional Neural Networks" in Tensorflow and OpenCV.}
+
+    \resumeSubItem{Unsupervised Machine Learning (Sep 2017 -- Dec 2017)}
+    {Developed a data driven approach to motion synthesis. Performed dimensionality reduction using Autoencoder Neural Networks. Resulted in quick and efficient motion queries for mechanism synthesis.}
+
+    \resumeSubItem{MotionGen (Dec 2015 -- June 2017)}
+    {A cross platform App for planar mechanism synthesis and simulation. Implemented several modules including Tolerance Based Synthesis, B-Spline Curve Generation. Worked with open source Apache Cordova framework for iOs and Android implementations.}
+
+    \resumeSubItem{Central Trajectory Problem (March 2017 -- May 2017)}
+    {Developed an algorithm for finding valid representative trajectory among n time stamped trajectories. Algorithm based on dijkstra's shortest path. Implemented in C++ using CGAL, OpenGL, Boost libraries}
+
+    \resumeSubItem{Motion Planning of a car (Oct 2016 -- Dec 2016)}
+    {Performed planning and optimal control of a car in drifting conditions using GPOPS-II. MATLAB based implementation available at deshpandeshrinath.github.io}
+
+    \resumeSubItem{Motion Planning of a Serial Manipulator (March 2016 -- May 2016)}
+    {MATLAB based implementation of Trajectory Planning and Inverse Kinematics of Baxter Arm for Planar Pushing Task.}
+
+    \resumeSubItem{Interactive Manipulation of NURBS Surfaces(March 2016 -- May 2016)}
+    {QT5, OpenGL based implementation in C++ for interactive manipulation of Non Uniform Rational B-Spline Surfaces.}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Proficient in Python, Javascript, MATLAB. Familiar with C\texttt{++}, HTML, CSS}
+    \resumeSubItem{Technologies}{Experienced with Git, Tensorflow, OpenCV, Numpy, Scikit-learn, Unix/Linux, Boost, STL, Apache Cordova}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubItem{A.T. Yang Award in Theoretical Kinematics (Aug 2017)}
+    {Awarded \$1000 for the Best Paper at ASME Mechanisms and Robotics Conference, Cleveland, OH, August, 2017}
+  \resumeSubHeadingListEnd
+\end{document}
