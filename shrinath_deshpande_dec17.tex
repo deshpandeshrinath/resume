@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -43,28 +43,46 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+% Main Headings like Company name with Tabular structure of Company & Place // designation & Duration
+\newcommand{\resumeHeading}[4]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\ %\vspace{-5pt}
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+      %\vspace{-5pt}
+}
+% Sub Headings e.g. Project Titles
+\newcommand{\resumeSubheading}[1]{
+      {\small\textbf{#1}} \\
+      %\vspace{-5pt}
+}
+
+% Reducing Gap Between Sections
+\newcommand{\resumeSection}[1]{
+\vspace{-12pt}
+\section{#1}
+}
+
+% Bullet list for details
+\newcommand{\resumeItemListStart}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=14pt]
+}
+\newcommand{\resumeItemListEnd}{
+\vspace{+7pt}
+\end{itemize}
+}
+
+\newcommand{\resumeItem}[1]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+      {#1 \vspace{-7pt}
+      }
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
-}
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -74,86 +92,110 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://github.io/deshpandeshrinath/}{\Large Shrinath Deshpande}} & Email : \href{mailto:deshpandeshrinath@gmail.com}{deshpandeshrinath@gmail.com}\\
+  \textbf{\href{https://deshpandeshrinath.github.io}{\Large Shrinath Deshpande}} & Email : \href{mailto:deshpandeshrinath@gmail.com}{deshpandeshrinath@gmail.com}\\
   \href{http://github.io.deshpandeshrinath/}{http://github.io.deshpandeshrinath/} & Mobile : +1-631-633-1851 \\
 \end{tabular*}
 
 
 %-----------EDUCATION-----------------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeHeading
       {Stony Brook University}{Stony Brook, NY}
       {Ph.D. (Major: Mechanical, Minor: Computer Science)}{Aug. 2015 -- Present}
     \resumeItemListStart
-      \resumeItem{Relevent Coursework}
-      {Computer Vision, Machine Learning, Analysis of Algorithms, Computational Geometry, Advanced Control Systems, Robotics, Geometric Modelling for CAD, Product Design Optimization}
+      \resumeItem{\textbf{Relevent Coursework :} Computer Vision, Machine Learning, Analysis of Algorithms, Computational Geometry, Advanced Control Systems, Robotics, Geometric Modelling for CAD, Product Design Optimization}
     \resumeItemListEnd
-  \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
+\resumeSection{Experience}
+    \resumeHeading
       {Stony Brook University}{Stony Brook, NY}
-      {Research Assistant}{May 2016 -- Present}
+      {Research Assistant, Teaching Assistant}{May 2016 -- Present, Aug 2015 -- May 2016}
+      \resumeSubheading{Machine Learning}
       \resumeItemListStart
-        \resumeItem{Machine Learning}
-          {Research on machine learning techniques for kinematic synthesis of planar mechanisms.
-          Performed dimensionality reduction using Auto-Encoders.
-          Developed a data driven approach to mechanism synthesis.}
-        \resumeItem{Optimization}
-          {Developed a optimization routine for linkage synthesis. Led to award winning publication for solving practical synthesis problems (doi: 10.1115/1.4037801)}
-        \resumeItem{MotionGen: Website, iOs and Android App for Linkage Synthesis}
-          {Developed core modules of a cross platform App for planar mechanism synthesis and simulation. Written in Javascript, HTML, CSS and built with Apache Cordova framework.}
+        \resumeItem{Research on machine learning techniques for kinematic synthesis of planar mechanisms.}
+        \resumeItem{Performed dimensionality reduction using Auto-Encoders.}
+        \resumeItem{Developed a data driven approach to mechanism synthesis.}
       \resumeItemListEnd
-    \resumeSubheading
-      {Stony Brook University}{Stony Brook, NY}
-      {Teaching Assistant}{Aug 2015 -- May 2016}
+
+      \vspace{-5pt}
+      \resumeSubheading{Optimization}
       \resumeItemListStart
-        \resumeItem{Teaching Assistant - Design Innovation, Engineering Dynamics}
-          {The undergraduate courses at Stony Brook University, had more than 200 students per course enrolled.
-          Involved in creating assignment, exams and conducting recitation sessions.}
+          \resumeItem{Developed an optimization routine for planar four-bar linkage synthesis.}
+          \resumeItem{Led to award winning publication for solving practical synthesis problems (doi: 10.1115/1.4037801)}
       \resumeItemListEnd
-  \resumeSubHeadingListEnd
+
+      \vspace{-5pt}
+      \resumeSubheading{MotionGen: Website, iOs and Android App for Linkage Synthesis}
+      \resumeItemListStart
+          \resumeItem{Developed core modules of a cross platform App for planar mechanism synthesis and simulation.}
+          \resumeItem{Written in Javascript, HTML, CSS and built with Apache Cordova framework.}
+      \resumeItemListEnd
+
+      \vspace{-5pt}
+      \resumeSubheading{Teaching Assistant - Design Innovation, Engineering Dynamics}
+      \resumeItemListStart
+        \resumeItem{The undergraduate courses at Stony Brook University, had more than 200 students per course enrolled.}
+        \resumeItem{Involved in creating assignment, exams and conducting recitation sessions.}
+      \resumeItemListEnd
 %-----------PROJECTS-----------------
-\section{Relevant Projects}
-  \resumeSubHeadingListStart
+\resumeSection{Relevant Projects}
+    \resumeHeading{Visual Odometry}{CSE527 Computer Vision, Prof. Roy Shilkrot} {Python, Tensorflow, OpenCV}{Oct 2017 -- Dec 2017}
+    \resumeItemListStart
+      \resumeItem{End-to-end Monocular Visual Odometry using deep Recurrent Convolutional Neural Networks.}
+      \resumeItem{Trained and tested on KITTI odometry dataset.}
+      \resumeItem{Implemented in Tensorflow and OpenCV.}
+    \resumeItemListEnd
 
-    \resumeSubItem{Visual Odometry (Oct 2017 -- Dec 2017)}
-      {Monocular Visual Odometry using Deep Learning. Implemented the paper "DeepVO: Towards end-to-end visual odometry with deep Recurrent Convolutional Neural Networks" in Tensorflow and OpenCV.}
+    \resumeHeading{Unsupervised Machine Learning}{CAD Innovation and Engineering Lab, Stony Brook}{Python, Javascript, Tensorflow, Scikit-Learn} {Sep 2017 -- Dec 2017}
+    \resumeItemListStart
+      \resumeItem{Developed a data driven approach to motion synthesis.}
+      \resumeItem{Performed dimensionality reduction using Autoencoder Neural Networks.}
+      \resumeItem{Resulted in quick and efficient motion queries for mechanism synthesis.}
+    \resumeItemListEnd
 
-    \resumeSubItem{Unsupervised Machine Learning (Sep 2017 -- Dec 2017)}
-    {Developed a data driven approach to motion synthesis. Performed dimensionality reduction using Autoencoder Neural Networks. Resulted in quick and efficient motion queries for mechanism synthesis.}
+    \resumeHeading{MotionGen}{CAD Innovation and Engineering Lab, Stony Brook}{Apache Cordova framework (JS, HTML, CSS)}{Dec 2015 -- June 2017}
+    \resumeItemListStart
+      \resumeItem{A cross platform App for planar mechanism synthesis and simulation.}
+      \resumeItem{Implemented several modules including Tolerance Based Synthesis, B-Spline Curve Generation.}
+      \resumeItem{Worked with open source Apache Cordova framework for iOs and Android implementations.}
+    \resumeItemListEnd
 
-    \resumeSubItem{MotionGen (Dec 2015 -- June 2017)}
-    {A cross platform App for planar mechanism synthesis and simulation. Implemented several modules including Tolerance Based Synthesis, B-Spline Curve Generation. Worked with open source Apache Cordova framework for iOs and Android implementations.}
+    \resumeHeading{Central Trajectory Problem}{CSE555 Computational Geometry, Prof. Joseph Mitchell}{CGAL, OpenGL, Boost, C\texttt{++}}{March 2017 -- May 2017}
+    \resumeItemListStart
+      \resumeItem{Developed an algorithm for finding valid representative trajectory among n time stamped trajectories.}
+      \resumeItem{Algorithm based on dijkstra's shortest path. Implemented in C++ using CGAL, OpenGL, Boost libraries}
+    \resumeItemListEnd
 
-    \resumeSubItem{Central Trajectory Problem (March 2017 -- May 2017)}
-    {Developed an algorithm for finding valid representative trajectory among n time stamped trajectories. Algorithm based on dijkstra's shortest path. Implemented in C++ using CGAL, OpenGL, Boost libraries}
+    \resumeHeading{Optimal Control of a Drifting Car}{MEC560 Advanced Control Systems, Prof. Vivek Yadav}{GPOPS-II, MATLAB}{Oct 2016 -- Dec 2016}
+    \resumeItemListStart
+      \resumeItem{Performed planning and optimal control of a car in drifting conditions using GPOPS-II.}
+      \resumeItem{MATLAB based implementation available at deshpandeshrinath.github.io}
+    \resumeItemListEnd
 
-    \resumeSubItem{Motion Planning of a car (Oct 2016 -- Dec 2016)}
-    {Performed planning and optimal control of a car in drifting conditions using GPOPS-II. MATLAB based implementation available at deshpandeshrinath.github.io}
+    \resumeHeading{Motion Planning of a Serial Manipulator}{MEC529 Robotics, Prof. N. Chakraborty}{MATLAB}{March 2016 -- May 2016}
+    \resumeItemListStart
+      \resumeItem{MATLAB based implementation of Trajectory Planning and Inverse Kinematics of Baxter Arm for Planar Pushing Task.}
+    \resumeItemListEnd
 
-    \resumeSubItem{Motion Planning of a Serial Manipulator (March 2016 -- May 2016)}
-    {MATLAB based implementation of Trajectory Planning and Inverse Kinematics of Baxter Arm for Planar Pushing Task.}
-
-    \resumeSubItem{Interactive Manipulation of NURBS Surfaces(March 2016 -- May 2016)}
-    {QT5, OpenGL based implementation in C++ for interactive manipulation of Non Uniform Rational B-Spline Surfaces.}
-  \resumeSubHeadingListEnd
+   % \resumeHeading{Interactive Manipulation of NURBS Surfaces}{MEC572 Geomtric Modelling, Prof. Anurag Purwar}{C\texttt{++}, OpenGL}{March 2016 -- May 2016}
+   % \resumeItemListStart
+   %   \resumeItem{QT5, OpenGL based implementation in C\texttt{++} for interactive manipulation of Non Uniform Rational B-Spline Surfaces.}
+   % \resumeItemListEnd
 
 %--------PROGRAMMING SKILLS------------
-\section{Skills}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Languages}{Proficient in Python, Javascript, MATLAB. Familiar with C\texttt{++}, HTML, CSS}
-    \resumeSubItem{Technologies}{Experienced with Git, Tensorflow, OpenCV, Numpy, Scikit-learn, Unix/Linux, Boost, STL, Apache Cordova}
-  \resumeSubHeadingListEnd
+\resumeSection{Skills}
+\vspace{+7pt}
+    \resumeItemListStart
+      \resumeItem{\textbf{Languages :} Proficient in Python, Javascript, MATLAB. Familiar with C\texttt{++}, HTML, CSS}
+      \resumeItem{\textbf{Technologies :} Experienced with Git, Tensorflow, OpenCV, Numpy, Scikit-learn, Unix/Linux, Boost, STL, Apache Cordova}
+    \resumeItemListEnd
 %-------------------------------------------
 
-\section{Awards}
-  \resumeSubHeadingListStart
-    \resumeSubItem{A.T. Yang Award in Theoretical Kinematics (Aug 2017)}
-    {Awarded \$1000 for the Best Paper at ASME Mechanisms and Robotics Conference, Cleveland, OH, August, 2017}
-  \resumeSubHeadingListEnd
+\resumeSection{Awards}
+    \resumeSubheading{A.T. Yang Award in Theoretical Kinematics (Aug 2017)}
+    \resumeItemListStart
+      \resumeItem{Awarded \$1000 for the Best Paper at ASME Mechanisms and Robotics Conference, Cleveland, OH, August, 2017}
+    \resumeItemListEnd
 \end{document}
