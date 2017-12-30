@@ -1,0 +1,7 @@
+Projects:
+
+1. Monocular Visual Odometry using Deep Learning in TensorFlow:
+
+Implemented the paper "DeepVO: Towards end-to-end visual odometry with deep
+Recurrent Convolutional Neural Networks"
+(http://ieeexplore.ieee.org/document/7989236/)

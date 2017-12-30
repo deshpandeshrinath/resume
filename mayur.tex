@@ -1,0 +1,201 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.94]{geometry}
+% \setlength{\hintscolumnwidth}{1cm}                % if you want to change the width of the column with the dates
+% \setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage[normalem]{ulem}
+
+\renewcommand{\labelitemii}{$\star$}
+\usepackage{import}
+
+% personal data
+\name{Mayur}{Jadhav}
+
+% \title{Mayur Resume}                               % optional, remove / comment the line if not wanted
+\address{700 Health Sciences Drive, Chapin Apartments - A1006, Stony Brook, NY, 11790}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(631) 974-3078}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{mjadhav@cs.stonybrook.edu}
+\homepage{www.fsl.cs.stonybrook.edu/~mayur/}                         % optional, remove / comment the line if not wanted
+\extrainfo{\url{https://github.com/MayurMJ}}
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+\usepackage{multibib}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+%\small{Graduate Student at Stony Brook University doing masters in computer science.}
+\vspace{-1cm}
+\section{Education}
+{\cventry{2017-2018}{Masters in Computer Science}{Stony Brook University}{Stony Brook, NY}{\textbf{Cumulative GPA - 3.96}}{}
+\begin{itemize}
+\item \textbf{Coursework:} Operating Systems, Computer Architecture, Network Security, Visualization \& Data Analytics, Analysis of Algorithms, Parallel Programming, Computer Vision
+\item Working on \uline{fsbench} project under the guidance of \uline{Prof. Erez Zadok} (Graduate Advisor) in the \uline{File
+Systems and Storage Lab (FSL)}
+%\item Project Assistant-\textbf{Data Context Map} under the guidance of \uline{Prof. Klaus Mueller} in the \uline{Visual Analytics and Imaging Lab}
+\end{itemize}
+\vspace{3pt}
+{\cventry{2010-2014}{Bachelor of Engineering}{University of Pune}{Pune, India}{\textbf{First Class with Distinction}}{}
+}
+\section{Skills}
+
+\vspace{3pt}
+
+\textbf{Core Competencies:} C, C++, Java, SQL, C\#, Python, HTML/CSS, Javascript, D3.js, Verilog
+\vspace{3pt}
+
+\textbf{Tools \& Technologies:} DirectX, CUDA, Cilk, GWT, Maven, MFC, Unix, Tortoise SVN, git, perforce, WinDbg, Agile, Valgrind, Perf.
+% \vspace{6pt}
+
+% \item \textbf{Other:} System Design and resiliency.
+
+\section{Work Experience}
+\vspace{3pt}
+{\cventry{July 2014--Jan 2017}{Tools Development Engineer}{Nvidia}{Pune, India}{}{}}
+	\begin{itemize}
+    	\item{Worked with \uline{DirectX Graphics Driver Group} and developed software which analyzed and compared performances of various GPUs}
+        \item{Developed tools which automated the process of driver verification majorly running WHQL and APICs}
+        \item{Developed \textbf{DirectX} graphics applications \textbf{(C++)} for testing various components of the Nvidia Graphics Driver}
+        \item{Added application programming interface \textbf{(C++)} to Nvidia’s SDK \textbf{(NVAPI)}}
+        \item{Designed and developed Code Coverage Framework in \textbf{Java} using Bullseye C++ code analyzer}
+    \end{itemize}
+
+\vspace{3pt}
+{\cventry{July 2013--July 2014}{Intern}{Tibco}{Pune, India}{}{}}
+	\begin{itemize}
+    	\item{Worked with \uline{Spotfire} team at Tibco on project \textbf{Automation Framework Enhancement}}
+        \item{Developed a web-based Integrated Development Environment using Google Web Toolkit \textbf{(GWT)} and \textbf{Java}, which helped users build XML-based test scripts that would adhere to a format required by the automation framework}
+\end{itemize}
+
+\vspace{3pt}
+\section{Projects}
+
+\vspace{3pt}
+
+\cventry{June 2017-- Current}{Traces and replays Linux System Calls (C, C++)}{System Call Tracer}{File Systems and Storage Lab, Prof. Erez Zadok}{}{}
+\vspace{2pt}
+\begin{itemize}
+\item \small{Currently working on this project which traces and re-executes system call operations that were captured during a specific workload.}
+\item \small{Worked on code optimizations in the strace2ds library and improved the performance of the tracer by about 50\% ( \textbf{Perf} and \textbf{Valgrind} )}
+\end{itemize}
+\vspace{3pt}
+
+\cventry{Sept 2017 -- Current}{A preemptive multi-tasking OS (C)}{SBUnix}{\textbf{CSE506} Operating Systems, Prof. Mike Ferdman}{}{}
+\vspace{2pt}
+\begin{itemize}
+\item \small{Built a preemptive multitasking operating system}
+\item \small{Features implemented include memory subsystem ( Page descriptors, Paging, Kmalloc, free-list ), Process Subsystem( Context Switch, Kernel threads ), User-level Subsystem ( VMAs, switch to ring 3, page faults ), interrupt handlers for keyboard, PIT.}
+\item \small{Also implemented a PCI driver which walks the configuration space, discovers AHCI controller and performs r/w operations on a SATA disk}
+\end{itemize}
+\vspace{3pt}
+
+
+\cventry{March 2017 -- May 2017}{Implements a subset of the RISC-V 64 ISA (Verilog)}{CPU}{\textbf{CSE502} Computer Architecture, Prof. Mike Ferdman}{}{}
+\vspace{2pt}
+\begin{itemize}
+\item\small{Built a 5+ stage pipelined CPU with set-associative caches, using \textbf{synthesizable System Verilog}}
+\end{itemize}
+\vspace{3pt}
+
+ \cventry{November 2017}{( Python, Tensorflow )}{Visual Odometry with Deep Learning}{\textbf{CSE527} Computer Vision, Prof. Roy Shilkrot}{}{}
+ \vspace{2pt}
+
+ \begin{itemize}
+ \item \small{Used a Recurrent Convolutional Neural Network with a pre-trained model from Flownet for pose estimation }
+ \item \small{Used the KITTI VO dataset (grayscale) to evaluate the design.}
+ \end{itemize}
+ \vspace{3pt}
+
+
+
+% \cventry{October 2017}{A Simulator for Page Tables in Linux (C++)}{Inverted page Tables}{\textbf{CSE506} Operating Systems, Prof. Mike Ferdman}{}{}
+% \vspace{2pt}
+
+% \begin{itemize}
+% \item \small{Implemented a simulator for inverted page tables using cuckoo hashing, Used Linux eBPF Tracing Tools to generate Linux logs }
+% \item \small{Were able to allocate 16KB continuous pages in the simulator Currently experimenting with different hash functions to improve contiguity}
+% \end{itemize}
+% \vspace{3pt}
+
+\cventry{April 2017}{Implemented an Interface in FeS2 (C++)}{Prefetcher Interface}{\textbf{CSE502} Computer Architecture, Prof. Mike Ferdman}{}{}
+\vspace{2pt}
+
+\begin{itemize}
+\item \small{
+Added an interface in a full-system execution-driven simulator for x86 which enables a user to plug in any of the prefetching algorithms developed as a part of the Data Prefetching Championship into the simulator\textbf{(C++)}}
+\end{itemize}
+\vspace{3pt}
+
+
+
+% {\textbf{AUTOGEN performance analysis: Distributed Memory Dynamic Programming Algorithms }
+
+% \vspace{1pt}
+% \small{\textbf{CSE613}: Parallel Programming by Prof. Rezaul Chowdhury}
+% \vspace{2pt}
+
+% \begin{itemize}
+% \item \small{Analysed performance and found patterns on distributed memory systems of the dynamic programming algorithms which were generated by AUTOGEN}
+% \item  \small{Experiments were performed on High Performance Computing clusters \textbf{Stampede and Comet} using \textbf{MPI(C/C++)}}
+% \end{itemize}
+% }
+
+% \vspace{3pt}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.

@@ -17,6 +17,13 @@
 \usepackage{fancyhdr}
 
 
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = blue %Colour of citations
+}
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -104,8 +111,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
- 18, Locust Ave, Stonybrook &\textbf{\href{https://www.linkedin.com/in/shrinath-deshpande-24344876/}{\LARGE Shrinath Deshpande}} & Email : \href{mailto:deshpandeshrinath@gmail.com}{deshpandeshrinath@gmail.com}\\
-New York  &\href{https://deshpandeshrinath.github.io}{http://github.io.deshpandeshrinath/} & Mobile : +1-631-633-1851 \\
+ 18, Locust Avenue, Stonybrook &\textbf{{\LARGE Shrinath Deshpande}} & Email : \href{mailto:deshpandeshrinath@gmail.com}{deshpandeshrinath@gmail.com}\\
+New York  &\href{https://deshpandeshrinath.github.io/}{https://deshpandeshrinath.github.io/} & Mobile : +1-631-633-1851 \\
 \end{tabular*}
 
 
@@ -116,7 +123,7 @@ New York  &\href{https://deshpandeshrinath.github.io}{http://github.io.deshpande
       {Ph.D. (Major: Mechanical, Minor: Computer Science)}{Aug. 2015 -- Present}
     \resumeItemListStart
       \resumeItem{\textbf{Relevent Coursework :} Computer Vision, Machine Learning, Analysis of Algorithms, Computational Geometry, Advanced Control Systems, Robotics, Geometric Modelling for CAD, Product Design Optimization}
-      \resumeItem{Developing a framework for data-driven mechanism design, under guidance of Dr. Purwar; funded by \$450K NSF grant.}
+      \resumeItem{Developing a framework for data-driven mechanism design, under the guidance of Dr. Purwar; funded by \$450K \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1563413}{NSF grant.}}
     \resumeItemListEnd
 
 
@@ -127,8 +134,8 @@ New York  &\href{https://deshpandeshrinath.github.io}{http://github.io.deshpande
       {Research Assistant, Teaching Assistant}{May 2016 -- Present, Aug 2015 -- May 2016}
       \resumeSubheading{Machine Learning}
       \resumeItemListStart
-        \resumeItem{Achieved 45:1 loss-less data compression for mechanism trajectory database; used autoencoder nets for dimensionality reduction.}
-        \resumeItem{Resulted in quick and efficient motion queries for nearest neighbor in compact feature space.}
+        \resumeItem{Used autoencoder nets for dimensionality reduction; Achieved 45:1 data compression for mechanism trajectory database}
+        \resumeItem{Implemented fast and efficient motion queries for nearest neighbors in compact feature space; Implemented using Scikit-learn.}
         \resumeItem{Autoencoders trained in greedy layer-wise fashion; Tensorflow, GCP based implementation; Publication in progress.}
         %\resumeItem{Currently working on supervised training of LSTM cells for prediction of defect free trajectory.}
       \resumeItemListEnd
@@ -136,16 +143,16 @@ New York  &\href{https://deshpandeshrinath.github.io}{http://github.io.deshpande
       \vspace{-5pt}
       \resumeSubheading{Optimization}
       \resumeItemListStart
-        \resumeItem{Developed an Lagrange Optimization routine for four-bar linkage synthesis; Reduces constrained optimization into polynomial system.
+        \resumeItem{Developed Lagrange Optimization routine for four-bar linkage synthesis; Reduces constrained optimization into polynomial system.
           Solved the system by gr\"{o}ebner basis method; implemented using GIAC npm package on node.js server.}
-        \resumeItem{Led to award winning publication for solving practical synthesis problems (doi: 10.1115/1.4037801)}
+        \resumeItem{Led to an award winning publication for solving practical synthesis problems (doi: 10.1115/1.4037801)}
       \resumeItemListEnd
 
       \vspace{-5pt}
       \resumeSubheading{MotionGen: Web, iOs and Android App for Linkage Synthesis}
       \resumeItemListStart
-        \resumeItem{Developed smart-synthesis, motion interpolation functions for the cross platform app based on MVC architecture; url: http://cadcam.eng.sunysb.edu/. Used Apache Cordova framework for iOs and Android implementations.}
-        \resumeItem{Implemented multi-core computations for synthesis using node package cluster.}
+        \resumeItem{Developed smart-synthesis, motion interpolation functions for the cross platform app based on MVC architecture; \\ url: \href{http://cadcam.eng.sunysb.edu/}{http://cadcam.eng.sunysb.edu/}. Used Apache Cordova framework for iOs and Android implementations.}
+        \resumeItem{Implemented multi-core computations for synthesis using \emph{Cluster} node package.}
       \resumeItemListEnd
 
       \vspace{-5pt}
