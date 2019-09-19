@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Shrinath Deshpande
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = blue %Colour of citations
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+% Main Headings like Company name with Tabular structure of Company & Place // designation & Duration
+\newcommand{\resumeHeading}[4]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \vspace{-2pt}\\ \vspace{1pt}
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+      %\vspace{-5pt}
+}
+% Sub Headings e.g. Project Titles
+\newcommand{\resumeSubheading}[1]{
+      {\small\textbf{#1}} \\
+      %\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingWithDate}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+    \end{tabular*}
+    \vspace{+2pt}
+}
+
+\newcommand{\resumeSubheadingNew}[1]{
+      {\small{#1}} \\
+      %\vspace{-5pt}
+}
+
+% Reducing Gap Between Sections
+\newcommand{\resumeSection}[1]{
+\vspace{-12pt}
+\section{\textbf{#1}}
+}
+
+% Bullet list for details
+\newcommand{\resumeItemListStart}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=14pt]
+}
+\newcommand{\resumeItemListEnd}{
+\vspace{+7pt}
+\end{itemize}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+      {#1 \vspace{-7pt}
+      }
+  }
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+ 700, Health Sciences Drive, &\textbf{{\LARGE Prerna kothari}} & Email : \href{mailto:kothariprerna13@gmail.com}{kothariprerna13@gmail.com}\\
+ Stony Brook, New York  &\href{https://deshpandeshrinath.github.io/}{linkedIn Link or Personal Website} & Mobile : +1-631-542-3679 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{\textbf{Education}}
+    \resumeHeading
+      {Stony Brook University}{Stony Brook, NY}
+      {M.S. Mechanical Engineering), GPA 3.88}{Jan. 2018 -- Present}
+    \resumeItemListStart
+      \resumeItem{\textbf{Relevent Coursework :} Artificial Intelligence, Machine Learning, Robotics, Geometric Modeling, Product Design Optimization, Mathematics}
+      \resumeItem{Developing a cloud based Machine Design Software, under the guidance of Dr. Purwar; funded by \$ 'X' NSF grant.}
+    \resumeItemListEnd
+
+
+%-----------EXPERIENCE-----------------
+\resumeSection{Experience}
+    \resumeHeading
+      {Stony Brook University}{Stony Brook, NY}
+      {Research Assistant}{Dec 2018 -- Present}
+      \resumeItemListStart
+        \resumeItem{Developing a web based platform for linkage design; A react-redux application is developed for simulating planar closed loop linkages \\ url: \href{https://prernakothari.github.io/motiongen-react/}{https://prernakothari.github.io/motiongen-react/}}
+       \resumeItem{Using React-Native for cross-platform mobile version of the application.}
+      \resumeItemListEnd
+
+    \resumeHeading
+      {Oracle}{Pune, India}
+      {Associate Consultant}{Aug 2015 -- Dec 2017}
+      \resumeItemListStart
+        \resumeItem{Customization and Implementation of Banking Products in the Internet Banking and mobile-based browser domain}
+       \resumeItem{Understanding banking processes and Implementation/Development to translate business needs into software.}
+      \resumeItemListEnd
+
+
+      \resumeSubheadingNew{\textbf{Teaching Assistant} - MEC101 (Mechanical Design Innovation), MEC 262 Engineering Dynamics}
+      \resumeItemListStart
+        \resumeItem{Involved in creating assignment, exams and conducting recitation sessions for 200\texttt{+} students in each course.}
+      \resumeItemListEnd
+
+%--------PROGRAMMING SKILLS------------
+\resumeSection{Skills}
+\vspace{+7pt}
+    \resumeItemListStart
+      \resumeItem{\textbf{Languages :} Proficient in Javascript, Java, Python, MATLAB, HTML5, CSS. Familiar with C\texttt{++}}
+      \resumeItem{\textbf{Tools \& Technologies :} Tensorflow, React, Redux, FC@ (Flexcube Direct Banking), XSL, XML, J2EE, JBoss, EAP.}
+    \resumeItemListEnd
+
+
+%-----------PROJECTS-----------------
+    \resumeSection{Relevant Projects}
+
+    \resumeHeading{Deep Recurrent Attentive Writer (DRAW) VAE }{MEC 634 Machine Learning, Prof. N Chakraborty}{Tensorflow}{Jan 2018 -- May 2018}
+    \resumeItemListStart
+      \resumeItem{Implemented DRAW Variational Auto Encoder for Sequential Generation of Images; Neural Networks with Attention Mechanism}
+      \resumeItem{Implemented in Tensorflow; Trained on MNIST, CIFAR Datasets; Reproduced the results presented in the google brain \href{https://arxiv.org/abs/1502.04623}{paper}}
+    \resumeItemListEnd
+
+    \resumeHeading{Deep Reinforcement Learning for Continuous Control Tasks}{CSE 537 AI, Prof. N Balasubramanian}{Tensorflow, OpenAI-Gym \href{https://github.com/deshpandeshrinath/deepDGP}{https://github.com/deshpandeshrinath/deepDGP}}{Jan 2018 -- May 2018}
+    \resumeItemListStart
+      \resumeItem{Implemented Deep DPG algorithm to learn continuous control policies; Compatible with all OpenAI-Gym environments.}
+      \resumeItem{Implemented Hindsight Experience Replay for learning goal-oriented tasks with sparse binary rewards.}
+    \resumeItemListEnd
+
+    \resumeHeading{Motion Planning of Baxter Arm}{MEC529 Robotics, Prof. N. Chakraborty}{MATLAB}{March 2016 -- May 2016}
+    \resumeItemListStart
+      \resumeItem{Computed smooth B-Spline motion for pushing. Computed Jacobian matrix; Applied approximate Inverse Position Kinematics}
+      \resumeItem{Obtained joint angles and rates for the task. Performed simulations to validate the results.}
+    \resumeItemListEnd
+
+    \resumeHeading{Interactive Manipulation of NURBS Surfaces}{MEC572 Geomtric Modelling, Prof. Anurag Purwar}{C\texttt{++}, OpenGL}{March 2016 -- May 2016}
+    \resumeItemListStart
+      \resumeItem{QT5, OpenGL based implementation in C\texttt{++} for interactive manipulation of Non Uniform Rational B-Spline Surfaces.}
+    \resumeItemListEnd
+
+\end{document}

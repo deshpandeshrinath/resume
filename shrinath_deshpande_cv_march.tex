@@ -1,0 +1,251 @@
+%-------------------------
+% Resume in Latex
+% Author : Shrinath Deshpande
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = blue %Colour of citations
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+% Main Headings like Company name with Tabular structure of Company & Place // designation & Duration
+\newcommand{\resumeHeading}[4]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \vspace{-2pt}\\ \vspace{1pt}
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+      %\vspace{-5pt}
+}
+% Sub Headings e.g. Project Titles
+\newcommand{\resumeSubheading}[1]{
+      {\small\textbf{#1}} \\
+      %\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingWithDate}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+    \end{tabular*}
+    \vspace{+2pt}
+}
+
+\newcommand{\resumeSubheadingNew}[1]{
+      {\small{#1}} \\
+      %\vspace{-5pt}
+}
+
+% Reducing Gap Between Sections
+\newcommand{\resumeSection}[1]{
+\vspace{-12pt}
+\section{\textbf{#1}}
+}
+
+% Bullet list for details
+\newcommand{\resumeItemListStart}{
+\vspace{-7pt}
+\begin{itemize}[leftmargin=14pt]
+}
+\newcommand{\resumeItemListEnd}{
+\vspace{+7pt}
+\end{itemize}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+      {#1 \vspace{-7pt}
+      }
+  }
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+ 700, Health Sciences Drive, &\textbf{{\LARGE Shrinath Deshpande}} & Email : \href{mailto:deshpandeshrinath@gmail.com}{deshpandeshrinath@gmail.com}\\
+ Stony Brook, New York  &\href{https://deshpandeshrinath.github.io/}{https://deshpandeshrinath.github.io/} & Mobile : +1-631-633-1851 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{\textbf{Education}}
+    \resumeHeading
+      {Stony Brook University}{Stony Brook, NY}
+      {Ph.D. (Major: Mechanical, Minor: Computer Science), GPA 3.88}{Aug. 2015 -- Present}
+    \resumeItemListStart
+      \resumeItem{\textbf{Relevent Coursework :} Artificial Intelligence, Computer Vision, Machine Learning, Analysis of Algorithms, Advanced Control Systems, Robotics, Advanced Dynamics, Computational Geometry, Geometric Modeling, Product Design Optimization}
+      \resumeItem{Developing an ML-based framework for Mechanical Design, under the guidance of Dr. Purwar; funded by \$450K \href{https://nsf.gov/awardsearch/showAward?AWD_ID=1563413}{NSF grant.}}
+    \resumeItemListEnd
+
+
+%-----------EXPERIENCE-----------------
+\resumeSection{Experience}
+    \resumeHeading
+      {Stony Brook University}{Stony Brook, NY}
+      {Research Assistant}{May 2016 -- Present}
+      \resumeSubheading{Machine Learning}
+      \resumeItemListStart
+        \resumeItem{Developing Deep Generative Models (VAE's and GAN's) for computational creativity and conceptual machine design.}
+        \resumeItem{Working on Deep Reinforcement Learning for Machine Design; Developed an OpenAI-gym Environment for a design task.}
+        \resumeItem{Variational autoencoders for representation learning of Linkage Trajectories; Trained classifiers for Mechanism Type-Synthesis}
+        \resumeItem{Implemented fast and efficient motion queries for nearest neighbors in compact feature space; Implemented using Scikit-learn.}
+      \resumeItemListEnd
+
+      \vspace{-5pt}
+      \resumeSubheading{Optimization}
+      \resumeItemListStart
+        \resumeItem{Developed Lagrange Optimization routine for four-bar linkage synthesis; Reduces constrained optimization into a polynomial system.
+          Solved the system by gr\"{o}ebner basis method; implemented using GIAC npm package on node.js server.}
+        \resumeItem{Lead Author of an award winning publication for solving practical synthesis problems (doi: 10.1115/1.4037801)}
+      \resumeItemListEnd
+
+      \vspace{-5pt}
+      \resumeSubheading{MotionGen: Web, iOS and Android App for Linkage Synthesis}
+      \resumeItemListStart
+        \resumeItem{Developed smart-synthesis, motion interpolation functionalities for the cross platform app based on MVC architecture; \\ url: \href{http://cadcam.eng.sunysb.edu/}{http://cadcam.eng.sunysb.edu/}. Used Apache Cordova framework for iOS and Android implementations.}
+        \resumeItem{Implemented multi-core computations for synthesis using \emph{Cluster} node package.}
+      \resumeItemListEnd
+
+    \resumeHeading
+      {Stony Brook University}{Stony Brook, NY}
+      {Teaching Assistant}{Aug 2015 -- May 2016}
+      \resumeSubheading{MEC101 (Mechanical Design Innovation), MEC 262 Engineering Dynamics}
+      \resumeItemListStart
+        \resumeItem{Involved in creating assignment, exams and conducting recitation sessions for 200\texttt{+} students in each course.}
+        \resumeItem{Developed modular robotic kits for MEC101 students; Conducted Hands-On tutorials on Arduino programming.}
+      \resumeItemListEnd
+
+%--------PROGRAMMING SKILLS------------
+\resumeSection{Skills}
+\vspace{+7pt}
+    \resumeItemListStart
+      \resumeItem{\textbf{Languages :} Proficient in Python, Javascript, MATLAB, Mathematica. Competent with C\texttt{++}, HTML, CSS}
+      \resumeItem{\textbf{Tools \& Technologies :} Tensorflow, OpenCV, Simulink, ROS, Vim, Scikit-learn, Unix/Linux, GCP, STL, Apache Cordova}
+    \resumeItemListEnd
+
+%--------PUBLICATIONS------------
+\resumeSection{Publications}
+\vspace{+7pt}
+    \resumeItemListStart
+      \resumeItem{Deshpande S, Purwar A. \textbf{Computational Creativity via Assisted Variational Synthesis of Mechanisms using Deep Generative Models},  ASME Journal of Mechanical Design 2019; Paper No: JMD-19-1152 (Submitted)}
+      \resumeItem{Loya A, Deshpande S, Purwar A. \textbf{Machine Learning Driven Individualized Gait Rehabilitation: Classification, Recognition and Mechanism Design},  ASME Journal of Mechanisms and Robotics 2019; Paper No: JMR-19-1093 (Submitted)}
+      \resumeItem{Deshpande S, Purwar A. \textbf{A Machine Learning Approach to Kinematic Synthesis of Defect-Free Planar Four-Bar Linkages},  ASME Journal of Computing and Information Science in Engineering 2019;19(2):021004-021004-10. Paper No: JCISE-18-1078; doi:10.1115/1.4042325.}
+      \resumeItem{Deshpande S, Purwar A. \textbf{A Task-Driven Approach to Optimal Synthesis of Planar Four-Bar Linkages for Extended Burmester Problem}, ASME. Journal of Mechanisms and Robotics. 2017;9(6):061005-061005-9. Paper No: JMR-17-1048; doi:10.1115/1.4037801}
+      \resumeItem{Purwar A, Deshpande S, Ge QJ. \textbf{MotionGen: Interactive Design and Editing of Planar Four-Bar Motions for Generating Pose and Geometric Constraints}. ASME. Journal of Mechanisms and Robotics. 2017;9(2):024504-024504-10. Paper No: JMR-16-1317; doi:10.1115/1.4035899}
+      \resumeItem{Ge QJ, Purwar A, Zhao P, Deshpande S. \textbf{A Task-Driven Approach to Unified Synthesis of Planar Four-Bar Linkages Using Algebraic Fitting of a Pencil of G-Manifolds}. ASME. Journal of Computing and Information Science in Engineering 2017;17(3):031011-031011-11. Paper No: JCISE-12-1235; doi:10.1115/1.4035528.}
+      \resumeItem{Deshpande S, Bakse A, Wabale S, Deshmukh A, Patil D. \textbf{Wall-climbing robot with mechanically synchronized gait}, Industrial Instrumentation and Control (ICIC), 2015 International Conference IEEE, Pune, India.}
+    \resumeItemListEnd
+
+
+%-----------PROJECTS-----------------
+    \resumeSection{Select Projects}
+
+    \resumeHeading{Deep Reinforcement Learning for Continuous Control Tasks}{CSE 537 AI, Prof. N Balasubramanian}{Tensorflow, OpenAI-Gym \href{https://github.com/deshpandeshrinath/deepDGP}{https://github.com/deshpandeshrinath/deepDGP}}{Jan 2018 -- May 2018}
+    \resumeItemListStart
+      \resumeItem{Implemented Deep DPG algorithm to learn continuous control policies; Compatible with all OpenAI-Gym environments.}
+      \resumeItem{Implemented Hindsight Experience Replay for learning goal-oriented tasks with sparse binary rewards.}
+    \resumeItemListEnd
+
+
+    \resumeHeading{Visual Odometry with Deep Learning}{CSE527 Computer Vision, Prof. Roy Shilkrot} {Python, Tensorflow, OpenCV \href{https://github.com/sladebot/deepvo}{https://github.com/sladebot/deepvo}}{Oct 2017 -- Dec 2017}
+    \resumeItemListStart
+      \resumeItem{Built deep Recurrent Convolutional Neural Network for pose estimation of a car; CNN was derived from pretrained FlowNet2.0}
+      \resumeItem{Trained and tested on KITTI visual odometry dataset (grayscale); Supported by \href{http://hi.cs.stonybrook.edu/}{Human Interaction Lab}, Stony Brook.}
+    \resumeItemListEnd
+
+    %%for face tracking intership at facebook, comment for others
+    %    \resumeHeading{Face Tracking in a Video Sequence}{CSE527 Computer Vision, Prof. Roy Shilkrot} {Python, OpenCV}{Oct 2017 -- Nov 2017}
+    %    \resumeItemListStart
+    %      \resumeItem{Detected the face in first frame with Viola-Jones Detector; Compared the tracking by CAMShift, PF, KF,Optical Flow tracker.}
+    %    \resumeItemListEnd
+    %\vspace{-10pt}
+
+    \resumeHeading{Computing Central Trajectory}{CSE555 Computational Geometry, Prof. Joseph Mitchell}{CGAL, OpenGL, Boost, C\texttt{++}}{March 2017 -- May 2017}
+    \resumeItemListStart
+      \resumeItem{Developed an algorithm to find valid representative trajectory among n time stamped trajectories; works in d dimensional space.}
+      \resumeItem{Algorithm builds a weighted DAG on input; designed heuristics for assigning weights. Output is dijkstra's shortest path on DAG.}
+    \resumeItemListEnd
+    \vspace{-10pt}
+
+    \resumeHeading{Optimal Control of a Drifting Car}{MEC560 Advanced Control Systems, Prof. Vivek Yadav}{MATLAB, GPOPS-II}{Oct 2016 -- Dec 2016}
+    \resumeItemListStart
+      \resumeItem{Designed Ext. Kalman Filter for Observer; Modeled governing dynamics; Used empirical tire friction model for drift simulations.}
+      \resumeItem{Computed shortest path using Dynamic Programming. Obtained Optimal Control via Direct Collocation; Implemented in MATLAB using optimal control solver \href{http://www.gpops2.com/}{GPOPS II}.}
+      \resumeItem{Used high gain PID controller to follow optimal control. Results match with empirical drifting techniques used by race drivers.}
+    \resumeItemListEnd
+
+    \vspace{-10pt}
+    \resumeHeading{Motion Planning of Baxter Arm}{MEC529 Robotics, Prof. N. Chakraborty}{MATLAB}{March 2016 -- May 2016}
+    \resumeItemListStart
+      \resumeItem{Computed smooth B-Spline motion for pushing. Computed Jacobian matrix; Applied approximate Inverse Position Kinematics}
+      \resumeItem{Obtained manipulator joint angles and rates for the task. Performed simulations to validate the results.}
+    \resumeItemListEnd
+
+    \resumeHeading{Interactive Manipulation of NURBS Surfaces}{MEC572 Geomtric Modelling, Prof. Anurag Purwar}{C\texttt{++}, OpenGL}{March 2016 -- May 2016}
+    \resumeItemListStart
+      \resumeItem{OpenGL based implementation in C\texttt{++} for interactive manipulation of Non Uniform Rational B-Spline Surfaces.}
+    \resumeItemListEnd
+
+    \resumeHeading{Wall Climbing Robot}{Senior Design Project}{MATLAB, Simulink, Solidworks}{Jan 2015 -- May 2015}
+    \resumeItemListStart
+      \resumeItem{Designed a noval mechanism inspired by Gecko; mechanically synchronized gait; used vacuum technology for adhesion}
+      \resumeItem{Developed robust feedback system; autonomous climbing; square shaped robot with area 1 $ft^2$ has climbing speed of 3 inch/sec}
+    \resumeItemListEnd
+
+
+\resumeSection{Awards}
+    \resumeSubheadingWithDate{A.T. Yang Award in Theoretical Kinematics}{Aug 2017}
+    \resumeItemListStart
+      \resumeItem{Awarded \$1000 for the Best Paper at ASME Mechanisms and Robotics Conference, Cleveland, OH, August, 2017}
+    \resumeItemListEnd
+
+\end{document}
