@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 DEC 2017 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  7 DEC 2018 12:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**shrinath_deshpande_dec17.tex
-(./shrinath_deshpande_dec17.tex
+**shrinath_deshpande_oct18.tex
+(./shrinath_deshpande_oct18.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -217,8 +217,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 25.
 
-(./shrinath_deshpande_dec17.aux)
-\openout1 = `shrinath_deshpande_dec17.aux'.
+(./shrinath_deshpande_oct18.aux)
+\openout1 = `shrinath_deshpande_oct18.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
 LaTeX Font Info:    ... okay on input line 110.
@@ -263,9 +263,9 @@ LaTeX Info: Redefining \ref on input line 110.
 LaTeX Info: Redefining \pageref on input line 110.
 LaTeX Info: Redefining \nameref on input line 110.
 
-(./shrinath_deshpande_dec17.out) (./shrinath_deshpande_dec17.out)
+(./shrinath_deshpande_oct18.out) (./shrinath_deshpande_oct18.out)
 \@outlinefile=\write3
-\openout3 = `shrinath_deshpande_dec17.out'.
+\openout3 = `shrinath_deshpande_oct18.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 113.
@@ -280,32 +280,32 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 120.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 125.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 126.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 126.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 127.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
 
-(./shrinath_deshpande_dec17.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 227.
-Package rerunfilecheck Info: File `shrinath_deshpande_dec17.out' has not change
+(./shrinath_deshpande_oct18.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
+Package rerunfilecheck Info: File `shrinath_deshpande_oct18.out' has not change
 d.
 (rerunfilecheck)             Checksum: A1B080B7806B091B7140F64EEA937B25;279.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
  ) 
 Here is how much of TeX's memory you used:
  6074 strings out of 493014
@@ -314,7 +314,7 @@ Here is how much of TeX's memory you used:
  9574 multiletter control sequences out of 15000+600000
  7370 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,11n,43p,329b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,11n,43p,364b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -325,10 +325,10 @@ ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/loca
 l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/
 texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on shrinath_deshpande_dec17.pdf (1 page, 130945 bytes).
+Output written on shrinath_deshpande_oct18.pdf (1 page, 132494 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  8 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

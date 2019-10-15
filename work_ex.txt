@@ -1,0 +1,8 @@
+Machine Learning
+Developing Generative Models (VAE's and Auto-regressive RNN's) for computational creativity and conceptual machine design. Working on deep RL model for Mechanical Design. Developed an OpenAI-gym Environment for Mechanism Design Task. Variational autoencoders for representation learning of Linkage Trajectories. Trained classifiers for Mechanism Type-Synthesis
+
+Optimization
+Developed Lagrange Optimization routine for four-bar linkage synthesis which reduces constrained optimization into a polynomial system. Solved the system by groebner basis method. Implemented using GIAC npm package on node.js server. Lead Author of an award winning publication for solving practical synthesis problems
+
+
+Developed MotionGen, A Web, iOS and Android App for Linkage Synthesis, based on MVC architecture. Used Apache Cordova framework for iOS and Android implementations. Implemented multi-core computations for synthesis using Cluster node package.

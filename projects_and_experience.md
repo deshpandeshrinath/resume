@@ -24,3 +24,10 @@ Resume structure:
 3. SubHeadings -> Only Headings e.g. Project titles
 4. Headed Details -> Bullet Points with Bold main point
 5. Details -> normal bullet points
+\vspace{-10pt}
+    \resumeHeading{Optimal Control of a Drifting Car}{MEC560 Advanced Control Systems, Prof. Vivek Yadav}{MATLAB, GPOPS-II}{Oct 2016 -- Dec 2016}
+    \resumeItemListStart
+      \resumeItem{Designed Ext. Kalman Filter for observer; Modeled governing dynamics; Used empirical tire friction model for drift simulations.}
+      \resumeItem{Computed shortest path using Dynamic Programming. Obtained Optimal Control via Direct Collocation; Implemented in MATLAB using optimal control solver \href{http://www.gpops2.com/}{GPOPS II}.}
+      \resumeItem{Used high gain PID controller to follow optimal control. Results match with empirical drifting techiques used by race drivers.}
+    \resumeItemListEnd

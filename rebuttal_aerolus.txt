@@ -1,0 +1,61 @@
+1. 2.5 years development experience.
+2. No professional experience in C.
+3. 1 year programming experience in C++.
+4. I have been working in robotics-related field since 5 years.
+   i. Computer Vision: (Aug-Dec 2017)
+        a. Monocular Visual Odometry using Geometric and Deep Learning on
+        KITTI datasets.
+        b. Face Tracking in a video sequence by CAMShift, PF, KF, Optical Flow tracker.
+   ii. Motion Planning of Baxter Arm for Pushing an object on the table.
+   (Jan-May 2016)
+        (Implemented on Real Hardware.)
+   iii. Optimal Control of a Drifting Car using Direct Collocation (Tested in Simulations Only)
+   iv. Wall Climbing Robot (Jan 2014 - April 2015): Designed Gait Mechanism and Actuations, Manufactured in the university lab.
+
+5. Familier to ROS since 6 Months.
+
+6. Research Assistant at Stony Brook University
+    May 2016 - Present
+    Developing a data driven Framework for Mechanism Synthesis.
+      - Developed scale invariant transform for planar motions, (similar to SIFT for
+    images.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
